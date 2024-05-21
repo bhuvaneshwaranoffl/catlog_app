@@ -1,0 +1,69 @@
+import 'package:flutter/material.dart';
+
+class ContactItem extends StatelessWidget {
+  final String itemName;
+  final bool isLandscape;
+  final VoidCallback? onTap;
+  const ContactItem({
+    super.key,
+    required this.itemName, required this.isLandscape, this.onTap,
+  });
+
+  @override
+Widget build(BuildContext context) {
+    final double itemHeight = isLandscape ? 70.0 : 70.0;
+     final EdgeInsetsGeometry padding = isLandscape
+        ? const EdgeInsets.symmetric(vertical: 10.0, horizontal: 100.0)
+        : const EdgeInsets.all(10.0);
+    return Padding(
+      padding: padding,
+      child: GestureDetector(
+        onTap:onTap,
+        child: Container(
+          height: itemHeight,
+          width: isLandscape ? 10.0 : null,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(9.0),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                spreadRadius: 3.0,
+                blurRadius: 5.0,
+                offset: const Offset(0, 2),
+              ),
+            ],
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Container(
+                  height: 70.0,
+                  width: 70.0,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8.0),
+                    color: const Color.fromARGB(245, 254, 14, 14),
+                  ),
+                  child: const Icon(
+                    Icons.person_2_outlined,
+                    size: 40,
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(width: 20.0),
+                Text(
+                  itemName,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 15.0,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

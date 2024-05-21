@@ -1,0 +1,168 @@
+{
+  "technicalInfo": [
+    {
+      "name": "Submittal Sheets",
+      "img": "assets/images/tileone.jpg",
+      "value": [
+        {
+          "name": "General Submittal",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
+            }
+        ]
+        },
+        {
+          "name": "No-Hub Pipe & Fittings",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "SickLeave",
+              "img": "assets/images/2148944835.jpg"
+            }
+        ]
+        },
+        {
+          "name": "Service Weight Hub & Spigot(SV)",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "SickLeave",
+              "img": "assets/images/2148944835.jpg"
+            }
+        ]
+        },
+        {
+          "name": "No-HUB HD Couplings",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "SickLeave",
+              "img": "assets/images/2148944835.jpg"
+            }
+        ]
+        }
+        
+      ]
+    },
+
+    {
+      "name": "Installation Guide",
+      "img": "assets/images/tiletwo.jpg",
+      "value": [
+        {
+          "name": "General Submittal",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
+            }
+        ]
+        },
+        {
+          "name": "No-Hub Pipe & Fittings",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "SickLeave",
+              "img": "assets/images/2148944835.jpg"
+            }
+        ]
+        },
+        {
+          "name": "Service Weight Hub & Spigot(SV)",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "SickLeave",
+              "img": "assets/images/2148944835.jpg"
+            }
+        ]
+        },
+        {
+          "name": "No-HUB HD Couplings",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "SickLeave",
+              "img": "assets/images/2148944835.jpg"
+            }
+        ]
+        }
+        
+      ]
+     
+    },
+
+    {
+      "name": "Safety Data sheet",
+       "img": "assets/images/tilethree.jpg",
+     "value": [
+        {
+          "name": "General Submittal",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
+            }
+        ]
+        },
+        {
+          "name": "No-Hub Pipe & Fittings",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "SickLeave",
+              "img": "assets/images/2148944835.jpg"
+            }
+        ]
+        },
+        {
+          "name": "Service Weight Hub & Spigot(SV)",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "SickLeave",
+              "img": "assets/images/2148944835.jpg"
+            }
+        ]
+        },
+        {
+          "name": "No-HUB HD Couplings",
+          "img": "assets/images/121481.jpg",
+          "value": [
+            {
+              "name": "SickLeave",
+              "img": "assets/images/2148944835.jpg"
+            }
+        ]
+        }
+        
+      ]
+    },
+
+    {
+      "name": "Frequently Asked Question",
+      "img": "assets/images/tilefour.jpg"
+    }
+  ]
+}
