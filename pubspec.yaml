@@ -44,6 +44,7 @@ dependencies:
   image: ^4.1.7
   flutter_native_splash: ^2.4.0
   flutter_launcher_icons: ^0.13.1
+  curved_labeled_navigation_bar: ^2.0.2
 
 flutter_launcher_icons:
   android: "launcher_icon"
@@ -84,6 +85,7 @@ flutter:
     - assets/
     - assets/pdf/
     - assets/json/
+    - assets/illustration/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

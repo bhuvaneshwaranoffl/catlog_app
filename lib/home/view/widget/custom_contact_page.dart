@@ -1,4 +1,6 @@
+import 'package:catalogue/home/utils/constant.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ContactItem extends StatelessWidget {
   final String itemName;
@@ -35,28 +37,29 @@ Widget build(BuildContext context) {
             ],
           ),
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(15.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  height: 70.0,
-                  width: 70.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8.0),
-                    color: const Color.fromARGB(245, 254, 14, 14),
-                  ),
-                  child: const Icon(
-                    Icons.person_2_outlined,
-                    size: 40,
-                    color: Colors.white,
-                  ),
-                ),
-                const SizedBox(width: 20.0),
+               //const SizedBox(width:10.0),
                 Text(
                   itemName,
                   style: const TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 15.0,
+                  ),
+                ),
+                  SizedBox(
+                  height: 70.0.h,
+                  width: 70.0.w,
+                  // decoration: BoxDecoration(
+                  //   borderRadius: BorderRadius.circular(8.0),
+                  //   color: const Color.fromARGB(245, 254, 14, 14),
+                  // ),
+                  child: const Icon(
+                    Icons.favorite_border,
+                    size: 25,
+                    color: Constant.scaffoldBackground,
                   ),
                 ),
               ],
