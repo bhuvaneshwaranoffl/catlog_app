@@ -98,8 +98,8 @@ class _ThrustForceState extends State<ThrustForce> {
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue[300],
-                    minimumSize: Size(100.sp, 40.sp),
+                    backgroundColor: Constant.scaffoldBackground,
+                    minimumSize: Size(160.sp, 45.sp),
                     padding: EdgeInsets.zero,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.sp),
@@ -109,7 +109,7 @@ class _ThrustForceState extends State<ThrustForce> {
                     'Calculate',
                     style: TextStyle(
                       fontSize: 18.sp,
-                      color: Constant.scaffoldBackground,
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -119,8 +119,8 @@ class _ThrustForceState extends State<ThrustForce> {
                     clearDropdowns();
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor:Constant.scaffoldBackground,
-                    minimumSize: Size(80.sp, 40.sp),
+                    //backgroundColor:Constant.scaffoldBackground,
+                    minimumSize: Size(80.sp, 45.sp),
                     padding: EdgeInsets.zero,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.sp),
@@ -130,7 +130,7 @@ class _ThrustForceState extends State<ThrustForce> {
                     'Clear',
                     style: TextStyle(
                       fontSize: 18.sp,
-                      color:Colors.white,
+                      color:Constant.scaffoldBackground,
                     ),
                   ),
                 ),
@@ -140,7 +140,7 @@ class _ThrustForceState extends State<ThrustForce> {
             Text(
               "The Thrust forces calculator will assist the designer in determining how properly restrain the cast iron soil pipe system",
               style: TextStyle(
-                color: Colors.white,
+                color:Constant.scaffoldBackground,
                 fontSize: 10.sp,
               ),
             ),

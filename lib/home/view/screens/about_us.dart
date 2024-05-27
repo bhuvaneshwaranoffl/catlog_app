@@ -1,6 +1,5 @@
-import 'package:catalogue/home/utils/constant.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 
 class AboutUsPage extends StatelessWidget {
   const AboutUsPage({super.key});
@@ -8,112 +7,141 @@ class AboutUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 137, 24, 16),
-      appBar: AppBar(),
-      body: Padding(
-        padding: EdgeInsets.only(left: 22.w, right: 22.w, top: 10.h),
+      appBar: AppBar(
+        title: const Text('About Us'),
+        centerTitle: true,
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset("assets/pic22.jpeg", height: 100, width: 100),
-            SizedBox(
-              height: 30.h,
+            const Text(
+              'Welcome to Your Company Name!',
+              style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 20.0),
+            const Text(
+              'At Your Company Name, we are dedicated to...',
+              style: TextStyle(fontSize: 16.0),
+            ),
+            const SizedBox(height: 20.0),
+            const Text(
+              'Our Mission:',
+              style: TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             const Text(
-              "ABC & FOUNDRY",
+              'Our mission is to...',
+              style: TextStyle(fontSize: 16.0),
+            ),
+            const SizedBox(height: 20.0),
+            const Text(
+              'Our Values:',
               style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  fontWeight: FontWeight.w600),
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-            SizedBox(
-              height: 30.h,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _buildValue('Integrity',
+                    'We believe in honesty and transparency in all our dealings.'),
+                _buildValue('Customer Satisfaction',
+                    'Ensuring our customers are happy and satisfied is our top priority.'),
+                _buildValue('Innovation',
+                    'We are constantly seeking new ways to improve and innovate.'),
+              ],
             ),
-            RichText(
-                text: const TextSpan(
-                    text: "Version",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
-                    children: [
-                  TextSpan(
-                      text: Constant.widgetVersion,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 38,
-                          fontWeight: FontWeight.w800))
-                ])),
-            SizedBox(
-                height: 20.h), // Add some space between version and privacy policy
+            const SizedBox(height: 20.0),
+            const Text(
+              'Our Team:',
+              style: TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _buildTeamMember('John Doe', 'CEO'),
+                _buildTeamMember('Jane Smith', 'CTO'),
+                _buildTeamMember('Emily Johnson', 'Marketing Director'),
+                _buildTeamMember('Michael Brown', 'Software Engineer'),
+              ],
+            ),
+            const SizedBox(height: 20.0),
+            const Text(
+              'Contact Us:',
+              style: TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 10.0),
+            const Text(
+              'Email: your.email@example.com',
+              style: TextStyle(fontSize: 16.0),
+            ),
+            const Text(
+              'Phone: +1234567890',
+              style: TextStyle(fontSize: 16.0),
+            ),
+            const Text(
+              'Address: 123 Main Street, City, Country',
+              style: TextStyle(fontSize: 16.0),
+            ),
           ],
-        ),
-      ),
-
-      bottomSheet: Container(
-        color: const Color.fromARGB(255, 137, 24, 16),
-        //padding: EdgeInsets.symmetric(vertical: 20.h),
-        child: Padding(
-          padding: EdgeInsets.only(left: 22.w, right: 22.w),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              GestureDetector(
-                onTap: () {
-                  // Implement onTap action
-                },
-                child: const DecoratedBox(
-                  decoration: BoxDecoration(
-                    border: Border(
-                      bottom:
-                          BorderSide(color: Colors.white), // White underline
-                    ),
-                  ),
-                  child: Text(
-                    "Privacy Policy",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height: 5.h),
-              GestureDetector(
-                onTap: () {
-                  // Implement onTap action
-                },
-                child: const DecoratedBox(
-                  decoration: BoxDecoration(
-                    border: Border(
-                      bottom:
-                          BorderSide(color: Colors.white), // White underline
-                    ),
-                  ),
-                  child: Text(
-                    "Terms and Conditions",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height: 30.h),
-                
-              // Copyright Text
-              Align(
-                alignment: Alignment.center,
-                child: Text(
-                  "© ${DateTime.now().year} ABC Foundry. All rights reserved.",
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 14,
-                  ),
-                ),
-              ),
-            ],
-          ),
         ),
       ),
     );
   }
+
+  Widget _buildValue(String title, String description) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          title,
+          style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 5.0),
+        Text(
+          description,
+          style: const TextStyle(fontSize: 16.0),
+        ),
+        const SizedBox(height: 10.0),
+      ],
+    );
+  }
+
+  Widget _buildTeamMember(String name, String position) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          name,
+          style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        Text(
+          position,
+          style: const TextStyle(fontSize: 16.0),
+        ),
+        const SizedBox(height: 10.0),
+      ],
+    );
+  }
 }
+

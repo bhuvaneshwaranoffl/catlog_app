@@ -23,7 +23,7 @@ class CalciMainPage extends StatelessWidget {
           children: [
             Text(
               "Engineering Calculators to design with cast iron  soil pipe",
-              style: TextStyle(color: Colors.white, fontSize: 17.sp),
+              style: TextStyle(color: Constant.scaffoldBackground, fontSize: 17.sp),
             ),
             SizedBox(
               height: 150.h,

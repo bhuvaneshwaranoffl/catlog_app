@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                                 context.pushNamed("/calcimain");
                                 break;
                               case "PRODUCT WARRANTY ISSUES":
-                                context.pushNamed("/warranty");
+                                context.pushNamed("/warrenty");
                                 break;
                             }
                           },

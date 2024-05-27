@@ -124,14 +124,14 @@ class _MinSlopeState extends State<MinSlope> {
             SizedBox(
               height: 10.h,
             ),
-            Row(
+                      Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue[300],
-                    minimumSize: Size(100.sp, 40.sp),
+                    backgroundColor: Constant.scaffoldBackground,
+                    minimumSize: Size(160.sp, 45.sp),
                     padding: EdgeInsets.zero,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.sp),
@@ -141,7 +141,7 @@ class _MinSlopeState extends State<MinSlope> {
                     'Calculate',
                     style: TextStyle(
                       fontSize: 18.sp,
-                      color: Constant.scaffoldBackground,
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -151,8 +151,8 @@ class _MinSlopeState extends State<MinSlope> {
                     clearDropdowns();
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue[300],
-                    minimumSize: Size(80.sp, 40.sp),
+                    //backgroundColor:Constant.scaffoldBackground,
+                    minimumSize: Size(80.sp, 45.sp),
                     padding: EdgeInsets.zero,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.sp),
@@ -172,7 +172,7 @@ class _MinSlopeState extends State<MinSlope> {
             Text(
               "The DWV minimum slope calculator will assist the designer in determining how to lay out the system and determine the required amount of pipe and fittings that will be needed.",
               style: TextStyle(
-                color: Colors.white,
+                color:Constant.scaffoldBackground,
                 fontSize: 10.sp,
               ),
             ),

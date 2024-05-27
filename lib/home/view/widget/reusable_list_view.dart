@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:catalogue/home/model/technical_info_model.dart';
+import 'package:catalogue/home/utils/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -48,28 +49,42 @@ class ReusableListView extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height: 70.h,
-                      width: 70.w,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8.r),
-                        color: const Color.fromARGB(245, 254, 14, 14),
-                      ),
-                      child: const Icon(
-                        Icons.person_2_outlined,
-                        size: 30,
-                        color: Colors.white,
-                      ),
-                    ),
-                    SizedBox(width: 20.w),
+                    // Container(
+                    //   height: 70.h,
+                    //   width: 70.w,
+                    //   decoration: BoxDecoration(
+                    //     borderRadius: BorderRadius.circular(8.r),
+                    //     color: const Color.fromARGB(245, 254, 14, 14),
+                    //   ),
+                    //   child: const Icon(
+                    //     Icons.person_2_outlined,
+                    //     size: 30,
+                    //     color: Colors.white,
+                    //   ),
+                    // ),
+                   // SizedBox(width: 20.w),
                     Text(
                       name,
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: 15.sp,
                       ),
-                    )
+                    ),
+                     SizedBox(
+                      height: 70.0.h,
+                      width: 70.0.w,
+                      // decoration: BoxDecoration(
+                      //   borderRadius: BorderRadius.circular(8.0),
+                      //   color: const Color.fromARGB(245, 254, 14, 14),
+                      // ),
+                      child: const Icon(
+                        Icons.favorite_border,
+                        size: 25,
+                        color: Constant.scaffoldBackground,
+                      ),
+                    ),
                   ],
                 ),
               ),

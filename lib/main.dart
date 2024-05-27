@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Catalog app',
           theme: ThemeData(
-            //scaffoldBackgroundColor: Constant.scaffoldBackground,
+            //scaffoldBackgroundColor: Colors.white.withOpacity(0.8),
             appBarTheme: const AppBarTheme(
                 titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
                 color: Color.fromARGB(255, 137, 24, 16),

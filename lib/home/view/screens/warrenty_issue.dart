@@ -16,6 +16,55 @@ class WarrentyIssue extends StatefulWidget {
 class _WarrentyIssueState extends State<WarrentyIssue> {
   File? _selectedImage;
 
+  String? selectedValue1;
+  String? selectedValue2;
+
+  List<String> dropdownValues1 = [
+    'SV Hub',
+    'No-Hub',
+    'PVC Coupling',
+    'ABS Elbow',
+    'Copper Tee',   
+  ];
+  
+List<String> dropdownValues2 = [
+    'Andhra Pradesh',
+    'Arunachal Pradesh',
+    'Assam',
+    'Bihar',
+    'Chhattisgarh',
+    'Goa',
+    'Gujarat',
+    'Haryana',
+    'Himachal Pradesh',
+    'Jharkhand',
+    'Karnataka',
+    'Kerala',
+    'Madhya Pradesh',
+    'Maharashtra',
+    'Manipur',
+    'Meghalaya',
+    'Mizoram',
+    'Nagaland',
+    'Odisha',
+    'Punjab',
+    'Rajasthan',
+    'Sikkim',
+    'Tamil Nadu',
+    'Telangana',
+    'Tripura',
+    'Uttar Pradesh',
+    'Uttarakhand',
+    'West Bengal',
+    'Andaman and Nicobar Islands',
+    'Chandigarh',
+    'Lakshadweep',
+    'Delhi',
+    'Puducherry',
+    'Ladakh',
+    'Jammu and Kashmir'
+  ];
+
   Future<void> _pickImageFromGallery() async {
     final returnImage =
         await ImagePicker().pickImage(source: ImageSource.gallery);
@@ -87,7 +136,7 @@ class _WarrentyIssueState extends State<WarrentyIssue> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:const Color.fromARGB(255, 254, 254, 253),
+      backgroundColor: const Color.fromARGB(255, 254, 254, 253),
       appBar: AppBar(
         title: const Text('Product Issue / Complaint'),
         centerTitle: true,
@@ -131,17 +180,28 @@ class _WarrentyIssueState extends State<WarrentyIssue> {
                 SizedBox(
                   height: 8.h,
                 ),
-                CustomTextFormField(
-                  labelText: 'Select Product',
-                  onSaved: (value) {
-                    selectedProduct = value!;
+                DropdownButtonFormField<String>(
+                  value: selectedValue1,
+                  onChanged: (newValue) {
+                    setState(() {
+                      selectedValue1 = newValue;
+                    });
                   },
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Please select a product';
-                    }
-                    return null;
-                  },
+                  items: dropdownValues1.map((value) {
+                    return DropdownMenuItem(
+                      value: value,
+                      child: Text(value),
+                    );
+                  }).toList(),
+                  decoration: InputDecoration(
+                    fillColor: Colors.white,
+                    filled: true,
+                    hintText: "Product",
+                    border: OutlineInputBorder(
+                      borderSide: const BorderSide(color: Colors.black),
+                      borderRadius: BorderRadius.circular(10.sp),
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 8.h,
@@ -149,7 +209,8 @@ class _WarrentyIssueState extends State<WarrentyIssue> {
                 const Text(
                   "Source of information",
                   style: TextStyle(
-                      fontWeight: FontWeight.w600, color: Colors.white),
+                      fontWeight: FontWeight.w600,
+                      color: Constant.scaffoldBackground),
                 ),
                 Row(
                   children: [
@@ -161,7 +222,7 @@ class _WarrentyIssueState extends State<WarrentyIssue> {
                           _selectedRole = value.toString();
                         });
                       },
-                      activeColor:Constant.scaffoldBackground,
+                      activeColor: Constant.scaffoldBackground,
                     ),
                     const Text(
                       'Whole Seller',
@@ -175,7 +236,7 @@ class _WarrentyIssueState extends State<WarrentyIssue> {
                           _selectedRole = value.toString();
                         });
                       },
-                       activeColor: Constant.scaffoldBackground,
+                      activeColor: Constant.scaffoldBackground,
                     ),
                     const Text(
                       'Contractor',
@@ -186,17 +247,28 @@ class _WarrentyIssueState extends State<WarrentyIssue> {
                 SizedBox(
                   height: 8.h,
                 ),
-                CustomTextFormField(
-                  labelText: 'State',
-                  onSaved: (value) {
-                    state = value!;
+                DropdownButtonFormField<String>(
+                  value: selectedValue2,
+                  onChanged: (newValue) {
+                    setState(() {
+                      selectedValue2 = newValue;
+                    });
                   },
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Please enter your state';
-                    }
-                    return null;
-                  },
+                  items: dropdownValues2.map((value) {
+                    return DropdownMenuItem(
+                      value: value,
+                      child: Text(value),
+                    );
+                  }).toList(),
+                  decoration: InputDecoration(
+                    fillColor: Colors.white,
+                    filled: true,
+                    hintText: "State",
+                    border: OutlineInputBorder(
+                      borderSide: const BorderSide(color: Colors.black),
+                      borderRadius: BorderRadius.circular(10.sp),
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 8.h,
@@ -232,10 +304,12 @@ class _WarrentyIssueState extends State<WarrentyIssue> {
                 const Text(
                   "Attachment",
                   style: TextStyle(
-                      fontWeight: FontWeight.w600, color: Colors.white),
+                      fontWeight: FontWeight.w600,
+                      color: Constant.scaffoldBackground),
                 ),
                 IconButton(
-                  icon: const Icon(Icons.add_a_photo, color: Colors.white),
+                  icon: const Icon(Icons.add_a_photo,
+                      color: Constant.scaffoldBackground),
                   onPressed: () {
                     showDialog(
                       context: context,
@@ -304,7 +378,7 @@ class _WarrentyIssueState extends State<WarrentyIssue> {
                       }
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.red[900],
+                      backgroundColor:Constant.scaffoldBackground,
                     ),
                     child: Text(
                       'Submit',

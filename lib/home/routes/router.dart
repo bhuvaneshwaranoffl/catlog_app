@@ -14,11 +14,15 @@ import 'package:catalogue/home/view/screens/no_hub_fittings/no_hub_fittings.dart
 import 'package:catalogue/home/view/screens/sv_hub_fittings/sv_hub_fittings.dart';
 import 'package:catalogue/home/view/screens/technical_information/second_common_screen.dart';
 import 'package:catalogue/home/view/screens/technical_information/technical_information.dart';
+import 'package:catalogue/home/view/screens/technical_information/third_common_screen.dart';
 import 'package:catalogue/home/view/screens/warrenty_issue.dart';
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 final GoRouter router = GoRouter(
   initialLocation: "/home",
+  errorPageBuilder: (context, state) =>
+    const  MaterialPage(child: Text('Page not found!')),
   routes: <RouteBase>[
     GoRoute(
       name: "/home",
@@ -126,11 +130,18 @@ final GoRouter router = GoRouter(
         return const TechnicalSupport();
       },
     ),
-    GoRoute(
-      name: "/secondscreen",
-      path: "/secondscreen",
+      GoRoute(
+        name: "/secondscreen",
+        path: "/secondscreen",
+        builder: (context, state) {
+          return const SecondCommonScreen();
+        },
+      ),
+     GoRoute(
+      name: "/thirdscreen",
+      path: "/thirdscreen",
       builder: (context, state) {
-        return const SecondCommonScreen();
+        return const ThirdCommonScreen();
       },
     ),
   ],

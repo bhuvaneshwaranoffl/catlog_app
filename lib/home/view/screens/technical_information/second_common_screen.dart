@@ -1,5 +1,6 @@
 import 'package:catalogue/home/view/widget/reusable_list_view.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SecondCommonScreen extends StatefulWidget {
   const SecondCommonScreen({super.key});
@@ -28,7 +29,9 @@ class _SecondCommonScreenState extends State<SecondCommonScreen> {
                 height: height,
                 length: 6,
                 technicalInfo:const [],
-                onTabTapped: () {},
+                onTabTapped: () {
+                  context.pushNamed('/thirdscreen');
+                },
                 submittalCategories: const[],
               );
             }),

@@ -22,7 +22,7 @@ class CustomTextFormField extends StatelessWidget {
           // borderSide:BorderSide(
           //   color: Colors.red.shade900,
           // ),
-          borderRadius: BorderRadius.circular(20.r)
+          borderRadius: BorderRadius.circular(10.r)
         ),
         labelText: labelText,
         labelStyle:const TextStyle(
