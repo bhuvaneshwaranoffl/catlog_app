@@ -31,7 +31,7 @@ class _ThirdCommonScreenState extends State<ThirdCommonScreen> {
           onTabTapped: () {
             context.pushNamed('/pdfscreen');
           },
-          submittalCategories: const [],
+          submittalCategories: const [], fontSize: 10, paddingValue2: 0,
         );
       }),
     );

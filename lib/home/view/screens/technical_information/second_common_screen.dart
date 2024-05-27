@@ -32,7 +32,7 @@ class _SecondCommonScreenState extends State<SecondCommonScreen> {
                 onTabTapped: () {
                   context.pushNamed('/thirdscreen');
                 },
-                submittalCategories: const[],
+                submittalCategories: const[], fontSize: 0, paddingValue2: 0,
               );
             }),
     );

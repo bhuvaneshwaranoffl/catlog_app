@@ -11,6 +11,8 @@ class ReusableListView extends StatelessWidget {
   final List<TechnicalInfo> technicalInfo;
   final void Function() onTabTapped;
   final List<SubmittalCategory> submittalCategories;
+  final double fontSize;
+  final double paddingValue2;
 
   const ReusableListView({
     super.key,
@@ -19,7 +21,7 @@ class ReusableListView extends StatelessWidget {
     required this.height,
     required this.technicalInfo,
     required this.onTabTapped,
-    required this.submittalCategories,
+    required this.submittalCategories, required this.fontSize, required this.paddingValue2,
   });
 
   @override
@@ -29,7 +31,7 @@ class ReusableListView extends StatelessWidget {
       itemBuilder: (BuildContext context, index) {
         final name = technicalInfo[index].name;
         return Padding(
-          padding: EdgeInsets.all(paddingValue.r),
+          padding: EdgeInsets.symmetric(horizontal: paddingValue.w,vertical: paddingValue2.h),
           child: GestureDetector(
             onTap: onTabTapped,
             child: Container(
@@ -47,7 +49,7 @@ class ReusableListView extends StatelessWidget {
                 ],
               ),
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(10.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -69,22 +71,14 @@ class ReusableListView extends StatelessWidget {
                       name,
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
-                        fontSize: 15.sp,
+                        fontSize: fontSize,
                       ),
                     ),
-                     SizedBox(
-                      height: 70.0.h,
-                      width: 70.0.w,
-                      // decoration: BoxDecoration(
-                      //   borderRadius: BorderRadius.circular(8.0),
-                      //   color: const Color.fromARGB(245, 254, 14, 14),
-                      // ),
-                      child: const Icon(
-                        Icons.favorite_border,
-                        size: 25,
-                        color: Constant.scaffoldBackground,
-                      ),
-                    ),
+                     const Icon(
+                       Icons.favorite_border,
+                       size: 25,
+                       color: Constant.scaffoldBackground,
+                     ),
                   ],
                 ),
               ),
