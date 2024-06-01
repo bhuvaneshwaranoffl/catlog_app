@@ -2,15 +2,15 @@
   "technicalInfo": [
     {
       "name": "Submittal Sheets",
-      "img": "assets/images/tileone.jpg",
+      "img": "assets/illustration/list.png",
       "value": [
         {
           "name": "General Submittal",
-          "img": "assets/images/121481.jpg",
+          "img": "assets/illustration/form.jpg",
           "value": [
             {
               "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
+              "img": "assets/illustration/list.png",
               "value":[
               {
                 "urlPdf":"assets/pdf/proposal.pdf"
@@ -21,11 +21,29 @@
         },
         {
           "name": "No-Hub Pipe & Fittings",
-          "img": "assets/images/121481.jpg",
+          "img": "assets/illustration/form.jpg",
           "value": [
             {
-              "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
+              "name": "No-HUB Submittal",
+              "img": "assets/illustration/list.png",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
+            },
+            {
+              "name": "Best Set Submittal",
+              "img": "assets/illustration/list.png",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
+            },
+            {
+              "name": "Extra Heavy Cost iron soil",
+              "img": "assets/illustration/list.png",
               "value":[
               {
                 "urlPdf":"assets/pdf/proposal.pdf"
@@ -35,12 +53,12 @@
         ]
         },
         {
-          "name": "Service Weight Hub & Spigot(SV)",
-           "img": "assets/images/121481.jpg",
+          "name": "Service Weight Hub & Spigot (SV)",
+           "img": "assets/illustration/form.jpg",
           "value": [
             {
               "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
+              "img": "assets/illustration/list.png",
               "value":[
               {
                 "urlPdf":"assets/pdf/proposal.pdf"
@@ -51,11 +69,11 @@
         },
         {
           "name": "No-HUB HD Couplings",
-          "img": "assets/images/121481.jpg",
+          "img": "assets/illustration/form.jpg",
           "value": [
             {
               "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
+              "img": "assets/illustration/list.png",
               "value":[
               {
                 "urlPdf":"assets/pdf/proposal.pdf"
@@ -70,15 +88,15 @@
 
     {
       "name": "Installation Guide",
-      "img": "assets/images/tiletwo.jpg",
+      "img": "assets/illustration/list.png",
       "value": [
         {
-          "name": "General Submittal",
-          "img": "assets/images/121481.jpg",
+          "name": "No-Hub",
+          "img": "assets/illustration/form.jpg",
           "value": [
             {
               "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
+              "img": "assets/illustration/list.png",
               "value":[
               {
                 "urlPdf":"assets/pdf/proposal.pdf"
@@ -88,12 +106,12 @@
         ]
         },
         {
-          "name": "No-Hub Pipe & Fittings",
-          "img": "assets/images/121481.jpg",
+          "name": "SV HUB & Spigot",
+          "img": "assets/illustration/form.jpg",
           "value": [
             {
               "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
+              "img": "assets/illustration/list.png",
               "value":[
               {
                 "urlPdf":"assets/pdf/proposal.pdf"
@@ -103,27 +121,12 @@
         ]
         },
         {
-          "name": "Service Weight Hub & Spigot(SV)",
-           "img": "assets/images/121481.jpg",
+          "name": "Cutting",
+           "img": "assets/illustration/form.jpg",
           "value": [
             {
               "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
-              "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
-              ]
-            }
-        ]
-        },
-        {
-          "name": "No-HUB HD Couplings",
-           "img": "assets/images/121481.jpg",
-          "value": [
-            {
-              "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
+              "img": "assets/illustration/list.png",
               "value":[
               {
                 "urlPdf":"assets/pdf/proposal.pdf"
@@ -132,22 +135,21 @@
             }
         ]
         }
-        
       ]
      
     },
 
     {
       "name": "Safety Data sheet",
-       "img": "assets/images/tilethree.jpg",
+       "img": "assets/illustration/list.png",
      "value": [
         {
-          "name": "General ",
-           "img": "assets/images/121481.jpg",
+          "name": "SDS - Gray Iron",
+           "img": "assets/illustration/form.jpg",
           "value": [
             {
               "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
+              "img": "assets/illustration/list.png",
               "value":[
               {
                 "urlPdf":"assets/pdf/proposal.pdf"
@@ -157,12 +159,12 @@
         ]
         },
         {
-          "name": "No-Hub Pipe & Fittings",
-          "img": "assets/images/121481.jpg",
+          "name": "SDS - Fitting Dip",
+          "img": "assets/illustration/form.jpg",
           "value": [
             {
               "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
+              "img": "assets/illustration/list.png",
               "value":[
               {
                 "urlPdf":"assets/pdf/proposal.pdf"
@@ -172,27 +174,12 @@
         ]
         },
         {
-          "name": "Service Weight Hub & Spigot(SV)",
-          "img": "assets/images/121481.jpg",
+          "name": "SDS - Hot Pipe-Dip",
+          "img": "assets/illustration/form.jpg",
           "value": [
             {
               "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
-              "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
-              ]
-            }
-        ]
-        },
-        {
-          "name": "No-HUB HD Couplings",
-           "img": "assets/images/121481.jpg",
-          "value": [
-            {
-              "name": "Submittal Data",
-              "img": "assets/images/2148944835.jpg",
+              "img": "assets/illustration/list.png",
               "value":[
               {
                 "urlPdf":"assets/pdf/proposal.pdf"
@@ -201,13 +188,12 @@
             }
         ]
         }
-        
       ]
     },
 
     {
-      "name": "Frequently Asked Question",
-      "img": "assets/images/tilefour.jpg"
+      "name": "Frequently Asked Questions",
+      "img": "assets/illustration/list.png"
     }
   ]
 }

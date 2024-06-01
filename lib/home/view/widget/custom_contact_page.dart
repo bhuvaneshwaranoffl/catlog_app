@@ -57,8 +57,8 @@ Widget build(BuildContext context) {
                   //   color: const Color.fromARGB(245, 254, 14, 14),
                   // ),
                   child: const Icon(
-                    Icons.favorite_border,
-                    size: 25,
+                    Icons.person,
+                    size: 35,
                     color: Constant.scaffoldBackground,
                   ),
                 ),

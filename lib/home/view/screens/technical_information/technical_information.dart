@@ -1,7 +1,6 @@
 // ignore_for_file: avoid_print
 
 import 'package:catalogue/home/provider/technical_info_provider.dart';
-import 'package:catalogue/home/utils/constant.dart';
 import 'package:catalogue/home/view/screens/technical_information/second_common_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -83,8 +82,8 @@ class _TechnnicalResistanceState extends State<TechnnicalResistance> {
                     child: GestureDetector(
                       onTap: () {
                         if (getData.technicalInfo[index].name ==
-                            "Frequently Asked Question") {
-                          context.pushNamed("/faq");
+                            "Frequently Asked Questions") {
+                           context.pushNamed('/faq');
                         } else {
                           Navigator.push(
                               context,
@@ -92,8 +91,7 @@ class _TechnnicalResistanceState extends State<TechnnicalResistance> {
                                   builder: (context) => SecondCommonScreen(
                                         submittalCategory:
                                             getData.technicalInfo[index].value,
-                                         name: getData.technicalInfo[index]
-                                                .name,
+                                        name: getData.technicalInfo[index].name,
                                       )));
                         }
                       },
@@ -137,11 +135,14 @@ class _TechnnicalResistanceState extends State<TechnnicalResistance> {
                                   fontSize: fontSize,
                                 ),
                               ),
-                              const Icon(
-                                Icons.favorite_border,
-                                size: 25,
-                                color: Constant.scaffoldBackground,
-                              ),
+                              // const Icon(
+                              //   Icons.folder,
+                              //   size: 35,
+                              //   color: Constant.scaffoldBackground,
+                              // ),
+                              Image.asset(getData.technicalInfo[index].img,
+                              height: 40,
+                              width: 40,),
                             ],
                           ),
                         ),

@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               const Spacer(),
               Expanded(
-                flex: 5,
+                flex: 4,
                 child: LayoutBuilder(
                   builder: (context, constraints) {
                     double mainAxisheight;
@@ -78,17 +78,17 @@ class _HomePageState extends State<HomePage> {
                       width = 300;
                       imgwidth = 95.w;
                       imgHeight = 95.h;
-                      font=7.sp;
-                      padding=40.h;
+                      font = 7.sp;
+                      padding = 40.h;
                     } else {
                       crossAxisCount = 2;
                       mainAxisheight = 130;
-                      height = 90;
-                      width = 150;
+                      height = 100;
+                      width = 170;
                       imgwidth = 30.w;
                       imgHeight = 30.h;
-                      font=9.sp;
-                      padding=13.h;
+                      font = 12.sp;
+                      padding = 10.h;
                     }
 
                     return GridView.builder(
@@ -97,8 +97,8 @@ class _HomePageState extends State<HomePage> {
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: crossAxisCount,
                         mainAxisExtent: mainAxisheight,
-                        crossAxisSpacing: 20.h,
-                        mainAxisSpacing: 10.h,
+                        crossAxisSpacing: 2.h,
+                        mainAxisSpacing: 2.h,
                       ),
                       itemBuilder: (BuildContext context, index) {
                         return GestureDetector(
@@ -130,6 +130,14 @@ class _HomePageState extends State<HomePage> {
                                 height: height,
                                 width: width,
                                 decoration: BoxDecoration(
+                                  gradient: const LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors: [
+                                    Color.fromARGB(255, 154, 4, 4),
+                                    Color.fromARGB(155, 207, 19, 19),
+                                  ]
+                                  ),
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(20.r),
                                   boxShadow: [
@@ -147,23 +155,30 @@ class _HomePageState extends State<HomePage> {
                                   // ),
                                 ),
                                 child: Padding(
-                                  padding:EdgeInsets.only(top:padding),
+                                  padding: EdgeInsets.only(top: padding),
                                   child: Column(
                                     children: [
                                       SizedBox(
                                         height: imgHeight,
                                         width: imgwidth,
-                                        child: Image.asset(items[index].image),
+                                        child:
+                                            Image.asset(items[index].image),
                                       ),
                                       SizedBox(
                                         height: 2.h,
                                       ),
-                                      Text(
-                                        items[index].name,
-                                        style: TextStyle(
-                                            fontSize:font,
-                                            fontWeight: FontWeight.w800),
-                                        softWrap: true,
+                                      Padding(
+                                        padding: EdgeInsets.only(
+                                          left: 10.w,
+                                        ),
+                                        child: Text(
+                                          items[index].name,
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                              fontSize: font,
+                                              fontWeight: FontWeight.w800),
+                                          softWrap: true,
+                                        ),
                                       ),
                                     ],
                                   ),

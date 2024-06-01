@@ -53,6 +53,7 @@ class _ContactPageState extends State<ContactPage> {
                           onTap: () {
                             if (items[index].name == "Customer Service") {
                               context.pushNamed("/customer");
+                             // context.pushNamed('/faq');
                             }
                             if (items[index].name ==
                                 "Manufacturing Representatives") {

@@ -1,5 +1,4 @@
 import 'package:catalogue/home/model/technical_info_model.dart';
-import 'package:catalogue/home/utils/constant.dart';
 import 'package:catalogue/home/view/screens/technical_information/common_pdf_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -100,11 +99,13 @@ class _ThirdCommonScreenState extends State<ThirdCommonScreen> {
                             fontSize: fontSize,
                           ),
                         ),
-                        const Icon(
-                          Icons.favorite_border,
-                          size: 25,
-                          color: Constant.scaffoldBackground,
-                        ),
+                        // const Icon(
+                        //   Icons.favorite_border,
+                        //   size: 25,
+                        //   color: Constant.scaffoldBackground,
+                        // ),
+                        Image.asset(widget.submittalItem![index].img, height: 40,
+                              width: 40,),
                       ],
                     ),
                   ),
