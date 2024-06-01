@@ -24,18 +24,28 @@
           "img": "assets/images/121481.jpg",
           "value": [
             {
-              "name": "SickLeave",
-              "img": "assets/images/2148944835.jpg"
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
             }
         ]
         },
         {
           "name": "Service Weight Hub & Spigot(SV)",
-          "img": "assets/images/121481.jpg",
+           "img": "assets/images/121481.jpg",
           "value": [
             {
-              "name": "SickLeave",
-              "img": "assets/images/2148944835.jpg"
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
             }
         ]
         },
@@ -44,8 +54,13 @@
           "img": "assets/images/121481.jpg",
           "value": [
             {
-              "name": "SickLeave",
-              "img": "assets/images/2148944835.jpg"
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
             }
         ]
         }
@@ -77,28 +92,43 @@
           "img": "assets/images/121481.jpg",
           "value": [
             {
-              "name": "SickLeave",
-              "img": "assets/images/2148944835.jpg"
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
             }
         ]
         },
         {
           "name": "Service Weight Hub & Spigot(SV)",
-          "img": "assets/images/121481.jpg",
+           "img": "assets/images/121481.jpg",
           "value": [
             {
-              "name": "SickLeave",
-              "img": "assets/images/2148944835.jpg"
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
             }
         ]
         },
         {
           "name": "No-HUB HD Couplings",
-          "img": "assets/images/121481.jpg",
+           "img": "assets/images/121481.jpg",
           "value": [
             {
-              "name": "SickLeave",
-              "img": "assets/images/2148944835.jpg"
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
             }
         ]
         }
@@ -112,8 +142,8 @@
        "img": "assets/images/tilethree.jpg",
      "value": [
         {
-          "name": "General Submittal",
-          "img": "assets/images/121481.jpg",
+          "name": "General ",
+           "img": "assets/images/121481.jpg",
           "value": [
             {
               "name": "Submittal Data",
@@ -131,8 +161,13 @@
           "img": "assets/images/121481.jpg",
           "value": [
             {
-              "name": "SickLeave",
-              "img": "assets/images/2148944835.jpg"
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
             }
         ]
         },
@@ -141,18 +176,28 @@
           "img": "assets/images/121481.jpg",
           "value": [
             {
-              "name": "SickLeave",
-              "img": "assets/images/2148944835.jpg"
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
             }
         ]
         },
         {
           "name": "No-HUB HD Couplings",
-          "img": "assets/images/121481.jpg",
+           "img": "assets/images/121481.jpg",
           "value": [
             {
-              "name": "SickLeave",
-              "img": "assets/images/2148944835.jpg"
+              "name": "Submittal Data",
+              "img": "assets/images/2148944835.jpg",
+              "value":[
+              {
+                "urlPdf":"assets/pdf/proposal.pdf"
+              }
+              ]
             }
         ]
         }

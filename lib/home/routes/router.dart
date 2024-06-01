@@ -12,9 +12,8 @@ import 'package:catalogue/home/view/screens/contact_screen/regional_managers.dar
 import 'package:catalogue/home/view/screens/contact_screen/technical_support.dart';
 import 'package:catalogue/home/view/screens/no_hub_fittings/no_hub_fittings.dart';
 import 'package:catalogue/home/view/screens/sv_hub_fittings/sv_hub_fittings.dart';
-import 'package:catalogue/home/view/screens/technical_information/second_common_screen.dart';
+import 'package:catalogue/home/view/screens/technical_information/faq_page.dart';
 import 'package:catalogue/home/view/screens/technical_information/technical_information.dart';
-import 'package:catalogue/home/view/screens/technical_information/third_common_screen.dart';
 import 'package:catalogue/home/view/screens/warrenty_issue.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -22,7 +21,7 @@ import 'package:go_router/go_router.dart';
 final GoRouter router = GoRouter(
   initialLocation: "/home",
   errorPageBuilder: (context, state) =>
-    const  MaterialPage(child: Text('Page not found!')),
+      const MaterialPage(child: Text('Page not found!')),
   routes: <RouteBase>[
     GoRoute(
       name: "/home",
@@ -74,7 +73,7 @@ final GoRouter router = GoRouter(
         return const MinSlope();
       },
     ),
-     GoRoute(
+    GoRoute(
       name: "/chemical",
       path: "/chemical",
       builder: (context, state) {
@@ -102,46 +101,53 @@ final GoRouter router = GoRouter(
         return const SvFittingsHub();
       },
     ),
-        GoRoute(
+    GoRoute(
       name: "/customer",
       path: "/customer",
       builder: (context, state) {
         return const CustomerService();
       },
     ),
-        GoRoute(
+    GoRoute(
       name: "/rep",
       path: "/rep",
       builder: (context, state) {
         return const ManufacturingRep();
       },
     ),
-        GoRoute(
+    GoRoute(
       name: "/region",
       path: "/region",
       builder: (context, state) {
         return const RegionalManagers();
       },
     ),
-        GoRoute(
+    GoRoute(
       name: "/techsupport",
       path: "/techsupport",
       builder: (context, state) {
         return const TechnicalSupport();
       },
     ),
-      GoRoute(
-        name: "/secondscreen",
-        path: "/secondscreen",
-        builder: (context, state) {
-          return const SecondCommonScreen();
-        },
-      ),
-     GoRoute(
-      name: "/thirdscreen",
-      path: "/thirdscreen",
+    // GoRoute(
+    //   name: "/secondscreen",
+    //   path: "/secondscreen",
+    //   builder: (context, state) {
+    //     return const SecondCommonScreen();
+    //   },
+    // ),
+    // GoRoute(
+    //   name: "/thirdscreen",
+    //   path: "/thirdscreen",
+    //   builder: (context, state) {
+    //     return const ThirdCommonScreen();
+    //   },
+    // ),
+    GoRoute(
+      name: "/faq",
+      path: "/faq",
       builder: (context, state) {
-        return const ThirdCommonScreen();
+        return const FAQPage();
       },
     ),
   ],

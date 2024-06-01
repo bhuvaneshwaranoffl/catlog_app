@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 
 class TechnicalInfoProvider extends ChangeNotifier{
   List<TechnicalInfo> technicalInfo = [];
+  
 
 Future<void> fetchTechnicalInfo()async{
     try {
@@ -21,5 +22,6 @@ Future<void> fetchTechnicalInfo()async{
        print('Error fetching JSON data: $e');
     }
 }
+
 
 }

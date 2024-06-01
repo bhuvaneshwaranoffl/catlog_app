@@ -1,0 +1,249 @@
+{
+  "manufacturingContacts": [
+    {
+      "name": "John Doe",
+      "designation": "Software Engineer",
+      "number": "+91-9876543210",
+      "email": "john.doe@example.com",
+      "place": "Andhra Pradesh"
+    },
+    {
+      "name": "Jane Smith",
+      "designation": "Project Manager",
+      "number": "+91-9123456789",
+      "email": "jane.smith@example.com",
+      "place": "Arunachal Pradesh"
+    },
+    {
+      "name": "Alice Johnson",
+      "designation": "Data Analyst",
+      "number": "+91-9988776655",
+      "email": "alice.johnson@example.com",
+      "place": "Assam"
+    },
+    {
+      "name": "Bob Brown",
+      "designation": "Designer",
+      "number": "+91-9876541234",
+      "email": "bob.brown@example.com",
+      "place": "Bihar"
+    },
+    {
+      "name": "Charlie Davis",
+      "designation": "Product Manager",
+      "number": "+91-8765432109",
+      "email": "charlie.davis@example.com",
+      "place": "Chhattisgarh"
+    },
+    {
+      "name": "Diana Evans",
+      "designation": "HR Manager",
+      "number": "+91-7654321098",
+      "email": "diana.evans@example.com",
+      "place": "Goa"
+    },
+    {
+      "name": "Evan Harris",
+      "designation": "Marketing Specialist",
+      "number": "+91-6543210987",
+      "email": "evan.harris@example.com",
+      "place": "Gujarat"
+    },
+    {
+      "name": "Fiona Clark",
+      "designation": "Sales Executive",
+      "number": "+91-5432109876",
+      "email": "fiona.clark@example.com",
+      "place": "Haryana"
+    },
+    {
+      "name": "George Lewis",
+      "designation": "Business Analyst",
+      "number": "+91-4321098765",
+      "email": "george.lewis@example.com",
+      "place": "Himachal Pradesh"
+    },
+    {
+      "name": "Hannah Wright",
+      "designation": "Operations Manager",
+      "number": "+91-3210987654",
+      "email": "hannah.wright@example.com",
+      "place": "Jharkhand"
+    },
+    {
+      "name": "Ian Walker",
+      "designation": "IT Support",
+      "number": "+91-2109876543",
+      "email": "ian.walker@example.com",
+      "place": "Karnataka"
+    },
+    {
+      "name": "Jessica Turner",
+      "designation": "Customer Service",
+      "number": "+91-1098765432",
+      "email": "jessica.turner@example.com",
+      "place": "Kerala"
+    },
+    {
+      "name": "Kyle Young",
+      "designation": "Network Engineer",
+      "number": "+91-9876123456",
+      "email": "kyle.young@example.com",
+      "place": "Madhya Pradesh"
+    },
+    {
+      "name": "Laura Scott",
+      "designation": "Accountant",
+      "number": "+91-8765432190",
+      "email": "laura.scott@example.com",
+      "place": "Maharashtra"
+    },
+    {
+      "name": "Michael Adams",
+      "designation": "Consultant",
+      "number": "+91-7654321980",
+      "email": "michael.adams@example.com",
+      "place": "Manipur"
+    },
+    {
+      "name": "Nancy Carter",
+      "designation": "Research Analyst",
+      "number": "+91-6543219870",
+      "email": "nancy.carter@example.com",
+      "place": "Meghalaya"
+    },
+    {
+      "name": "Oliver Brooks",
+      "designation": "Graphic Designer",
+      "number": "+91-5432198760",
+      "email": "oliver.brooks@example.com",
+      "place": "Mizoram"
+    },
+    {
+      "name": "Paula Evans",
+      "designation": "Content Writer",
+      "number": "+91-4321987650",
+      "email": "paula.evans@example.com",
+      "place": "Nagaland"
+    },
+    {
+      "name": "Quinn Baker",
+      "designation": "SEO Specialist",
+      "number": "+91-3219876540",
+      "email": "quinn.baker@example.com",
+      "place": "Odisha"
+    },
+    {
+      "name": "Rachel Phillips",
+      "designation": "Social Media Manager",
+      "number": "+91-2198765430",
+      "email": "rachel.phillips@example.com",
+      "place": "Punjab"
+    },
+    {
+      "name": "Samuel Bennett",
+      "designation": "Financial Advisor",
+      "number": "+91-1097654321",
+      "email": "samuel.bennett@example.com",
+      "place": "Rajasthan"
+    },
+    {
+      "name": "Tina Collins",
+      "designation": "Legal Advisor",
+      "number": "+91-0987654321",
+      "email": "tina.collins@example.com",
+      "place": "Sikkim"
+    },
+    {
+      "name": "Umar Patel",
+      "designation": "Chief Executive Officer",
+      "number": "+91-9876543201",
+      "email": "umar.patel@example.com",
+      "place": "Tamil Nadu"
+    },
+    {
+      "name": "Violet Richards",
+      "designation": "Chief Operating Officer",
+      "number": "+91-8765432101",
+      "email": "violet.richards@example.com",
+      "place": "Telangana"
+    },
+    {
+      "name": "William Sanders",
+      "designation": "Chief Financial Officer",
+      "number": "+91-7654321091",
+      "email": "william.sanders@example.com",
+      "place": "Tripura"
+    },
+    {
+      "name": "Xander Green",
+      "designation": "Chief Technology Officer",
+      "number": "+91-6543210981",
+      "email": "xander.green@example.com",
+      "place": "Uttar Pradesh"
+    },
+    {
+      "name": "Yvonne Edwards",
+      "designation": "Chief Marketing Officer",
+      "number": "+91-5432109871",
+      "email": "yvonne.edwards@example.com",
+      "place": "Uttarakhand"
+    },
+    {
+      "name": "Zachary Robinson",
+      "designation": "Chief Information Officer",
+      "number": "+91-4321098761",
+      "email": "zachary.robinson@example.com",
+      "place": "West Bengal"
+    },
+    {
+      "name": "Angela Hall",
+      "designation": "Chief Human Resources Officer",
+      "number": "+91-3210987651",
+      "email": "angela.hall@example.com",
+      "place": "Andaman and Nicobar Islands"
+    },
+    {
+      "name": "Brandon Kelly",
+      "designation": "Chief Compliance Officer",
+      "number": "+91-2109876541",
+      "email": "brandon.kelly@example.com",
+      "place": "Chandigarh"
+    },
+    {
+      "name": "Catherine Lee",
+      "designation": "Chief Risk Officer",
+      "number": "+91-1098765431",
+      "email": "catherine.lee@example.com",
+      "place": "Lakshadweep"
+    },
+    {
+      "name": "Daniel Parker",
+      "designation": "Chief Data Officer",
+      "number": "+91-9876543212",
+      "email": "daniel.parker@example.com",
+      "place": "Delhi"
+    },
+    {
+      "name": "Elena Scott",
+      "designation": "Chief Administrative Officer",
+      "number": "+91-8765432102",
+      "email": "elena.scott@example.com",
+      "place": "Puducherry"
+    },
+    {
+      "name": "Frank Harris",
+      "designation": "Chief Sustainability Officer",
+      "number": "+91-7654321092",
+      "email": "frank.harris@example.com",
+      "place": "Ladakh"
+    },
+    {
+      "name": "Grace Walker",
+      "designation": "Chief Strategy Officer",
+      "number": "+91-6543210982",
+      "email": "grace.walker@example.com",
+      "place": "Jammu and Kashmir"
+    }
+  ]
+}

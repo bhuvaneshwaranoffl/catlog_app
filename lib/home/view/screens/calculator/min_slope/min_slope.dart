@@ -58,15 +58,15 @@ class _MinSlopeState extends State<MinSlope> {
           sizeBox2 = 20;
           fontSize1 = 14.0;
         } else {
-          buttonHeight1 = 45;
-          buttonWidth1 = 160;
-          buttonHeight2 = 45;
-          buttonWidth2 = 80;
+          buttonHeight1 = 45.h;
+          buttonWidth1 = 160.w;
+          buttonHeight2 = 45.h;
+          buttonWidth2 = 80.w;
           fontSize = 17.sp;
-          padding = 22;
-          sizeBox = 10;
-          sizeBox2 = 30;
-          fontSize1 = 10;
+          padding = 22.w;
+          sizeBox = 10.h;
+          sizeBox2 = 30.h;
+          fontSize1 = 10.sp;
         }
         return SingleChildScrollView(
           child: Padding(
