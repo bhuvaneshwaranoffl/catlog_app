@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTextFormField extends StatelessWidget {
   final String labelText;
   final void Function(String?)? onSaved;
   final String? Function(String?)? validator;
+  final double radius;
 
   const CustomTextFormField({super.key, 
     required this.labelText,
     this.onSaved,
-    this.validator,
+    this.validator, required this.radius,
   });
 
   @override
@@ -22,7 +22,7 @@ class CustomTextFormField extends StatelessWidget {
           // borderSide:BorderSide(
           //   color: Colors.red.shade900,
           // ),
-          borderRadius: BorderRadius.circular(10.r)
+          borderRadius: BorderRadius.circular(radius)
         ),
         labelText: labelText,
         labelStyle:const TextStyle(

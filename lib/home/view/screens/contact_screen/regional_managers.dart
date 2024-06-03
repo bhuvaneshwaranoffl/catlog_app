@@ -85,7 +85,7 @@ class _RegionalManagersState extends State<RegionalManagers> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text("Regional Managers"),
         centerTitle: false,
@@ -93,7 +93,7 @@ class _RegionalManagersState extends State<RegionalManagers> {
       body: SafeArea(
         child: OrientationBuilder(
           builder: (context, orientation) {
-            double padding = 8.0;
+            //double padding = 8.0;
             double fontSize = 13.sp;
             double fontSize1 = 11.sp;
             double sizedBox = 11.w;
@@ -101,7 +101,7 @@ class _RegionalManagersState extends State<RegionalManagers> {
             double circleAvatar = 30.r;
 
             if (orientation == Orientation.landscape) {
-              padding = 13.0;
+            //  padding = 13.0;
               fontSize = 8.sp;
               fontSize1 = 6.sp;
               sizedBox = 6.w;
@@ -111,41 +111,35 @@ class _RegionalManagersState extends State<RegionalManagers> {
 
             return Column(
               children: [
-                Container(
-                  decoration: const BoxDecoration(color: Colors.white),
-                  child: Padding(
-                    padding: EdgeInsets.all(padding),
-                    child: Align(
-                      alignment: Alignment.centerLeft,
-                      child: DropdownButtonFormField<String>(
-                        value: selectedValue,
-                        onChanged: (newValue) {
-                          setState(() {
-                            selectedValue = newValue;
-                          });
-                        },
-                        items: contactItems.map((value) {
-                          return DropdownMenuItem(
-                              value: value, child: Text(value));
-                        }).toList(),
-                        isExpanded: true, // Add this line
-                        decoration: InputDecoration(
-                          fillColor: Colors.white,
-                          filled: true,
-                          labelText: 'Search',
-                          border: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Colors.black),
-                            borderRadius: BorderRadius.circular(10.r),
-                          ),
-                        ),
+                Padding(
+                  padding: EdgeInsets.only(right: 22.w, top: 10, left: 22),
+                  child: DropdownButtonFormField<String>(
+                    value: selectedValue,
+                    onChanged: (newValue) {
+                      setState(() {
+                        selectedValue = newValue;
+                      });
+                    },
+                    items: contactItems.map((value) {
+                      return DropdownMenuItem(
+                          value: value, child: Text(value));
+                    }).toList(),
+                    isExpanded: true, // Add this line
+                    decoration: InputDecoration(
+                      fillColor: Colors.white,
+                      filled: true,
+                      labelText: 'Search',
+                      border: OutlineInputBorder(
+                        borderSide: const BorderSide(color: Colors.black),
+                        borderRadius: BorderRadius.circular(10.r),
                       ),
                     ),
                   ),
                 ),
-                Divider(
-                  thickness: 2,
-                  color: Colors.black.withOpacity(0.1),
-                ),
+                // Divider(
+                //   thickness: 2,
+                //   color: Colors.black.withOpacity(0.1),
+                // ),
                 Expanded(
                   child: Container(
                     height: MediaQuery.of(context).size.height,
@@ -156,7 +150,7 @@ class _RegionalManagersState extends State<RegionalManagers> {
                       itemBuilder: (context, index) {
                         final contact = filteredContacts[index];
                         return Padding(
-                          padding: EdgeInsets.all(padding),
+                          padding: EdgeInsets.only(right: 22.w, top: 10, left: 22),
                           child: Container(
                             height: height,
                             decoration: BoxDecoration(

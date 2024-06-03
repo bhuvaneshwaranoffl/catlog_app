@@ -46,7 +46,7 @@ class _ContactPageState extends State<ContactPage> {
             Column(
               children: [
                 SizedBox(
-                  height: 100.h, // Height of your AppBar
+                  height: 120.h, // Height of your AppBar
                   child: AppBar(
                     title: Text("Contact",
                     style: TextStyle(fontSize:fontSize,
