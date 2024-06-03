@@ -46,7 +46,7 @@ Widget build(BuildContext context) {
                   itemName,
                   style: const TextStyle(
                     fontWeight: FontWeight.w600,
-                    fontSize: 15.0,
+                    fontSize: 17.0,
                   ),
                 ),
                   SizedBox(

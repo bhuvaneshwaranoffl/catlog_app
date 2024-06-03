@@ -1,5 +1,4 @@
 // ignore_for_file: avoid_print
-
 import 'package:catalogue/home/provider/technical_info_provider.dart';
 import 'package:catalogue/home/view/screens/technical_information/second_common_screen.dart';
 import 'package:flutter/material.dart';
@@ -7,14 +6,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
-class TechnnicalResistance extends StatefulWidget {
-  const TechnnicalResistance({super.key});
+class TechnicalInformation extends StatefulWidget {
+  const TechnicalInformation({super.key});
 
   @override
-  State<TechnnicalResistance> createState() => _TechnnicalResistanceState();
+  State<TechnicalInformation> createState() => _TechnicalInformationState();
 }
 
-class _TechnnicalResistanceState extends State<TechnnicalResistance> {
+class _TechnicalInformationState extends State<TechnicalInformation> {
   bool _isLoading = true;
 
   @override
@@ -152,6 +151,7 @@ class _TechnnicalResistanceState extends State<TechnnicalResistance> {
                 },
               );
             }),
+           
     );
   }
 }

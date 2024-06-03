@@ -1,5 +1,6 @@
 // router_config.dart
 import 'package:catalogue/home/controller/bottom_nav_bar_controller.dart/home_bottom_bar.dart';
+import 'package:catalogue/home/controller/bottom_nav_bar_controller.dart/tech_info_main.dart';
 import 'package:catalogue/home/view/screens/about_us.dart';
 import 'package:catalogue/home/view/screens/calculator/min_slope/min_slope.dart';
 import 'package:catalogue/home/view/screens/calculator/thrust_forces/thrust_force.dart';
@@ -13,7 +14,6 @@ import 'package:catalogue/home/view/screens/contact_screen/technical_support.dar
 import 'package:catalogue/home/view/screens/no_hub_fittings/no_hub_fittings.dart';
 import 'package:catalogue/home/view/screens/sv_hub_fittings/sv_hub_fittings.dart';
 import 'package:catalogue/home/view/screens/technical_information/faq_page.dart';
-import 'package:catalogue/home/view/screens/technical_information/technical_information.dart';
 import 'package:catalogue/home/view/screens/warrenty_issue.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -84,7 +84,7 @@ final GoRouter router = GoRouter(
       name: "/technical",
       path: "/technical",
       builder: (context, state) {
-        return const TechnnicalResistance();
+        return const TechBottomMainNavBar();
       },
     ),
     GoRoute(

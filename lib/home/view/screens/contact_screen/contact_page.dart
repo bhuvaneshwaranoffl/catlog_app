@@ -23,60 +23,75 @@ class _ContactPageState extends State<ContactPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          CustomPaint(
-            painter: CurvedTickAppBarPainter(),
-            child: Container(
-              height: 200.h, // Height of your AppBar
+      body: LayoutBuilder(
+        builder: (context, constraints){
+           double height;
+        double fontSize;
+        if (constraints.maxWidth > 600 &&
+            MediaQuery.of(context).orientation == Orientation.landscape) {
+          height = 100;
+          fontSize = 15.sp;
+        } else {
+          height = 133;
+          fontSize = 17.sp;
+        }
+        return Stack(
+          children: [
+            CustomPaint(
+              painter: CurvedTickAppBarPainter(),
+              child: Container(
+                height:height, // Height of your AppBar
+              ),
             ),
-          ),
-          Column(
-            children: [
-              SizedBox(
-                height: 100.h, // Height of your AppBar
-                child: AppBar(
-                  title: const Text("Contact",style: TextStyle(fontSize: 19,
-                  fontWeight: FontWeight.w600),),
-                  centerTitle: true,
-                  backgroundColor: Colors.transparent,
-                  elevation: 0,
+            Column(
+              children: [
+                SizedBox(
+                  height: 100.h, // Height of your AppBar
+                  child: AppBar(
+                    title: Text("Contact",
+                    style: TextStyle(fontSize:fontSize,
+                    fontWeight: FontWeight.w600),),
+                    centerTitle: true,
+                    backgroundColor: Colors.transparent,
+                    elevation: 0,
+                  ),
                 ),
-              ),
-              Expanded(
-                child: OrientationBuilder(
-                  builder: (context, orientation) {
-                    return ListView.builder(
-                      itemCount: items.length,
-                      itemBuilder: (BuildContext context, index) {
-                        return ContactItem(
-                          onTap: () {
-                            if (items[index].name == "Customer Service") {
-                              context.pushNamed("/customer");
-                             // context.pushNamed('/faq');
-                            }
-                            if (items[index].name ==
-                                "Manufacturing Representatives") {
-                              context.pushNamed("/rep");
-                            }
-                            if (items[index].name == "Regional Managers") {
-                              context.pushNamed("/region");
-                            }
-                            if (items[index].name == "Technical Support") {
-                              context.pushNamed("/techsupport");
-                            }
-                          },
-                          itemName: items[index].name,
-                          isLandscape: orientation == Orientation.landscape,
-                        );
-                      },
-                    );
-                  },
+                Expanded(
+                  child: OrientationBuilder(
+                    builder: (context, orientation) {
+                      return ListView.builder(
+                        itemCount: items.length,
+                        itemBuilder: (BuildContext context, index) {
+                          return ContactItem(
+                            onTap: () {
+                              if (items[index].name == "Customer Service") {
+                                context.pushNamed("/customer");
+                               // context.pushNamed('/faq');
+                              }
+                              if (items[index].name ==
+                                  "Manufacturing Representatives") {
+                                context.pushNamed("/rep");
+                              }
+                              if (items[index].name == "Regional Managers") {
+                                context.pushNamed("/region");
+                              }
+                              if (items[index].name == "Technical Support") {
+                                context.pushNamed("/techsupport");
+                              }
+                            },
+                            itemName: items[index].name,
+                            isLandscape: orientation == Orientation.landscape,
+                          );
+                        },
+                      );
+                    },
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        );
+        }
       ),
     );
   }
