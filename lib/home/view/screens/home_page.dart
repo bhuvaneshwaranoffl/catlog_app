@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                 elevation: 0,
                 centerTitle: true,
                 title: Text(
-                  "ABC FOUNDRY",
+                  "PRODUCT INFORMATIONS",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: fontSize,

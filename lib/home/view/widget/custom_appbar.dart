@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:catalogue/home/utils/constant.dart';
+
 
 class CurvedTickAppBarPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
        Paint paint = Paint();
-    paint.color = Constant.scaffoldBackground; // Change this to your desired color
+    paint.color = const Color.fromARGB(255, 126, 20, 12);// Change this to your desired color
     paint.style = PaintingStyle.fill;
 
     Path path = Path();

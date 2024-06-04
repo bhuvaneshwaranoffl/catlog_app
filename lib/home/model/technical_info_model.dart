@@ -1,113 +1,25 @@
-class TechnicalInfo {
-  final String name;
-  final String img;
-  final List<SubmittalCategory>? value;
+class Node {
+  String name;
+  String img;
+  String? url;
+  List<Node> value;
 
-  TechnicalInfo({
+  Node({
     required this.name,
     required this.img,
+    this.url,
     required this.value,
   });
 
-  factory TechnicalInfo.fromJson(Map<String, dynamic> json) {
-    return TechnicalInfo(
+  factory Node.fromJson(Map<String, dynamic> json) {
+    return Node(
       name: json['name'],
       img: json['img'],
+      // ignore: prefer_if_null_operators
+      url: json['url'] != null ? json['url'] : null,
       value: json['value'] != null
-          ? (json['value'] as List)
-              .map((item) => SubmittalCategory.fromJson(item))
-              .toList()
-          : null,
+          ? (json['value'] as List).map((i) => Node.fromJson(i)).toList()
+          : [],
     );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'name': name,
-      'img': img,
-      'value': value?.map((item) => item.toJson()).toList(),
-    };
-  }
-}
-
-class SubmittalCategory {
-  final String name;
-  final String img;
-  final List<SubmittalItem>? value;
-
-  SubmittalCategory({
-    required this.name,
-    required this.img,
-    required this.value,
-  });
-
-  factory SubmittalCategory.fromJson(Map<String, dynamic> json) {
-    return SubmittalCategory(
-      name: json['name'],
-      img: json['img'],
-      value: json['value'] != null
-          ? (json['value'] as List)
-              .map((item) => SubmittalItem.fromJson(item))
-              .toList()
-          : null,
-    );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'name': name,
-      'img': img,
-      'value': value?.map((item) => item.toJson()).toList(),
-    };
-  }
-}
-
-class SubmittalItem {
-  final String name;
-  final String img;
-  final List<SubmittalData>? value;
-
-  SubmittalItem({
-    required this.name,
-    required this.img,
-    this.value,
-  });
-
-  factory SubmittalItem.fromJson(Map<String, dynamic> json) {
-    return SubmittalItem(
-      name: json['name'],
-      img: json['img'],
-      value: json['value'] != null
-          ? (json['value'] as List)
-              .map((item) => SubmittalData.fromJson(item))
-              .toList()
-          : null,
-    );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'name': name,
-      'img': img,
-      'value': value?.map((item) => item.toJson()).toList(),
-    };
-  }
-}
-
-class SubmittalData {
-  final String urlPdf;
-
-  SubmittalData({required this.urlPdf});
-
-  factory SubmittalData.fromJson(Map<String, dynamic> json) {
-    return SubmittalData(
-      urlPdf: json['urlPdf'],
-    );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'urlPdf': urlPdf,
-    };
   }
 }

@@ -3,18 +3,41 @@
     {
       "name": "Submittal Sheets",
       "img": "assets/illustration/list.png",
+      "url":"",
       "value": [
         {
           "name": "General Submittal",
           "img": "assets/illustration/form.jpg",
+          "url": "",
           "value": [
             {
               "name": "Submittal Data",
               "img": "assets/illustration/list.png",
+              "url":"assets/pdf/proposal.pdf",
               "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+             {
+              "name": "Submittal Data  one",
+              "img": "assets/illustration/list.png",
+              "url":"assets/pdf/proposal.pdf",
+              "value":[
+             {
+              "name": "Submittal Data  two",
+              "img": "assets/illustration/list.png",
+              "url":"assets/pdf/proposal.pdf",
+              "value":[
+             
+              ]
+            },
+            {
+              "name": "Submittal Data  three",
+              "img": "assets/illustration/list.png",
+              "url":"assets/pdf/proposal.pdf",
+              "value":[
+             
+              ]
+            }
+              ]
+            }
               ]
             }
         ]
@@ -22,32 +45,37 @@
         {
           "name": "No-Hub Pipe & Fittings",
           "img": "assets/illustration/form.jpg",
+          "url":"",
           "value": [
             {
               "name": "No-HUB Submittal",
               "img": "assets/illustration/list.png",
+               "url":"assets/pdf/proposal.pdf",
               "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+              
               ]
             },
             {
               "name": "Best Set Submittal",
               "img": "assets/illustration/list.png",
+               "url":"assets/pdf/proposal.pdf",
               "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+             
               ]
             },
             {
               "name": "Extra Heavy Cost iron soil",
               "img": "assets/illustration/list.png",
+              "url":"assets/pdf/proposal.pdf",
               "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+              
+              ]
+            },{
+              "name": "Extra Heavy Cost iron soil",
+              "img": "assets/illustration/list.png",
+              "url":"assets/pdf/proposal.pdf",
+              "value":[
+              
               ]
             }
         ]
@@ -59,10 +87,25 @@
             {
               "name": "Submittal Data",
               "img": "assets/illustration/list.png",
+              "url":"assets/pdf/proposal.pdf",
               "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+             
+              ]
+            },
+             {
+              "name": "Submittal Data",
+              "img": "assets/illustration/list.png",
+              "url":"assets/pdf/proposal.pdf",
+              "value":[
+             
+              ]
+            },
+            {
+              "name": "Sv-hub",
+              "img": "assets/illustration/list.png",
+              "url":"assets/pdf/proposal.pdf",
+              "value":[
+              
               ]
             }
         ]
@@ -70,127 +113,91 @@
         {
           "name": "No-HUB HD Couplings",
           "img": "assets/illustration/form.jpg",
+          "url":"",
           "value": [
             {
               "name": "Submittal Data",
               "img": "assets/illustration/list.png",
+              "url":"assets/pdf/proposal.pdf",
               "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+             
               ]
             }
         ]
         }
-        
       ]
     },
 
-    {
+
+ {
       "name": "Installation Guide",
       "img": "assets/illustration/list.png",
+      "url":"",
       "value": [
         {
           "name": "No-Hub",
           "img": "assets/illustration/form.jpg",
-          "value": [
-            {
-              "name": "Submittal Data",
-              "img": "assets/illustration/list.png",
-              "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+          "url":"assets/pdf/proposal.pdf",
+          "value":[
+             
               ]
-            }
-        ]
+          
         },
         {
           "name": "SV HUB & Spigot",
           "img": "assets/illustration/form.jpg",
-          "value": [
-            {
-              "name": "Submittal Data",
-              "img": "assets/illustration/list.png",
-              "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+          "url":"assets/pdf/proposal.pdf",
+          "value":[
+             
               ]
-            }
-        ]
         },
         {
           "name": "Cutting",
            "img": "assets/illustration/form.jpg",
-          "value": [
-            {
-              "name": "Submittal Data",
-              "img": "assets/illustration/list.png",
-              "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+           "url":"assets/pdf/proposal.pdf",
+           "value":[
+             
               ]
-            }
-        ]
         }
       ]
      
     },
 
+
     {
       "name": "Safety Data sheet",
        "img": "assets/illustration/list.png",
-     "value": [
+       "url":"",
+       "value": [
         {
           "name": "SDS - Gray Iron",
-           "img": "assets/illustration/form.jpg",
-          "value": [
-            {
-              "name": "Submittal Data",
-              "img": "assets/illustration/list.png",
-              "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+          "img": "assets/illustration/form.jpg",
+          "url":"assets/pdf/proposal.pdf",
+          "value":[
+             
               ]
-            }
-        ]
         },
         {
           "name": "SDS - Fitting Dip",
           "img": "assets/illustration/form.jpg",
-          "value": [
-            {
-              "name": "Submittal Data",
-              "img": "assets/illustration/list.png",
-              "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+          "url":"assets/pdf/proposal.pdf",
+          "value":[
+             
               ]
-            }
-        ]
         },
         {
           "name": "SDS - Hot Pipe-Dip",
           "img": "assets/illustration/form.jpg",
-          "value": [
-            {
-              "name": "Submittal Data",
-              "img": "assets/illustration/list.png",
-              "value":[
-              {
-                "urlPdf":"assets/pdf/proposal.pdf"
-              }
+          "url":"assets/pdf/proposal.pdf",
+          "value":[
+             
               ]
-            }
-        ]
         }
       ]
     },
 
+
+    
     {
       "name": "Frequently Asked Questions",
       "img": "assets/illustration/list.png"

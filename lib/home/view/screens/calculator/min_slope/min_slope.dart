@@ -13,6 +13,7 @@ class _MinSlopeState extends State<MinSlope> {
   String? selectedValue1;
   String? selectedValue2;
   String? selectedValue3;
+  String result = '';
 
   List<String> dropdownValues1 = ['1', '2', '3'];
   List<String> dropdownValues2 = ['4', '5', '6'];
@@ -23,7 +24,28 @@ class _MinSlopeState extends State<MinSlope> {
       selectedValue1 = null;
       selectedValue2 = null;
       selectedValue3 = null;
+      result = '';
     });
+  }
+
+  void calculateMinSlope() {
+    if (selectedValue1 != null &&
+        selectedValue2 != null &&
+        selectedValue3 != null) {
+      double pipeSize = double.parse(selectedValue1!);
+      double percentFull = double.parse(selectedValue2!);
+      double velocity = double.parse(selectedValue3!);
+      double minSlope =
+          (pipeSize * percentFull) / velocity; // Example calculation
+
+      setState(() {
+        result = 'Minimum Slope: $minSlope';
+      });
+    } else {
+      setState(() {
+        result = 'Please select values for all dropdowns';
+      });
+    }
   }
 
   @override
@@ -70,7 +92,7 @@ class _MinSlopeState extends State<MinSlope> {
         }
         return SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: padding,vertical: 10.h),
+            padding: EdgeInsets.symmetric(horizontal: padding, vertical: 10.h),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -96,8 +118,14 @@ class _MinSlopeState extends State<MinSlope> {
                       borderRadius: BorderRadius.circular(10.sp),
                     ),
                   ),
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Please select a value';
+                    }
+                    return null;
+                  },
                 ),
-                SizedBox(height:sizeBox),
+                SizedBox(height: sizeBox),
                 DropdownButtonFormField<String>(
                   value: selectedValue2,
                   onChanged: (newValue) {
@@ -120,6 +148,12 @@ class _MinSlopeState extends State<MinSlope> {
                       borderRadius: BorderRadius.circular(10.sp),
                     ),
                   ),
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Please select a value';
+                    }
+                    return null;
+                  },
                 ),
                 SizedBox(height: sizeBox),
                 DropdownButtonFormField<String>(
@@ -144,15 +178,21 @@ class _MinSlopeState extends State<MinSlope> {
                       borderRadius: BorderRadius.circular(10.sp),
                     ),
                   ),
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Please select a value';
+                    }
+                    return null;
+                  },
                 ),
-                SizedBox(
-                  height: sizeBox,
-                ),
+                SizedBox(height: sizeBox),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        calculateMinSlope();
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Constant.scaffoldBackground,
                         minimumSize: Size(buttonWidth1, buttonHeight1),
@@ -185,7 +225,7 @@ class _MinSlopeState extends State<MinSlope> {
                       child: Text(
                         'Clear',
                         style: TextStyle(
-                          fontSize:fontSize,
+                          fontSize: fontSize,
                           color: Constant.scaffoldBackground,
                         ),
                       ),
@@ -197,6 +237,14 @@ class _MinSlopeState extends State<MinSlope> {
                   "The DWV minimum slope calculator will assist the designer in determining how to lay out the system and determine the required amount of pipe and fittings that will be needed.",
                   style: TextStyle(
                     color: Constant.scaffoldBackground,
+                    fontSize: fontSize1,
+                  ),
+                ),
+                SizedBox(height: 10.sp),
+                Text(
+                  result,
+                  style: TextStyle(
+                    color: Colors.red,
                     fontSize: fontSize1,
                   ),
                 ),
