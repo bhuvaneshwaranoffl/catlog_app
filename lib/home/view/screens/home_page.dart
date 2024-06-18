@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
     Item("assets/illustration/chemical-reaction.png", "CHEMICAL RESISTANCE"),
     Item("assets/illustration/troubleshooting.png", "TECHNICAL INFORMATION"),
     Item("assets/illustration/3d-calculator.png", "ENGINEERING CALCULATOR"),
-    Item("assets/illustration/", "WARRANTY ISSUES"),
+    Item("assets/illustration/online-survey.png", "WARRANTY ISSUES"),
   ];
 
   @override
@@ -98,7 +98,21 @@ class _HomePageState extends State<HomePage> {
                           imgHeight = 95.h;
                           font = 7.sp;
                           padding = 40.h;
-                        } else {
+                        }
+
+                        if (constraints.maxWidth > 1280 &&
+                            MediaQuery.of(context).orientation ==
+                                Orientation.landscape) {
+                          crossAxisCount = 4;
+                          mainAxisheight = 130;
+                          height = 110;
+                          width = 270;
+                          imgwidth = 45.w;
+                          imgHeight = 45.h;
+                          font = 3.sp;
+                          padding = 10.h;
+                        } 
+                         else {
                           crossAxisCount = 2;
                           mainAxisheight = 130;
                           height = 100;
