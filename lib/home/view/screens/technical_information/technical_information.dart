@@ -46,7 +46,7 @@ class _TechnicalInformationState extends State<TechnicalInformation> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => PdfViewerPage(pdfPath: pdfPath),
+        builder: (context) => PdfViewerPage(pdfPath: pdfPath, name:'',),
       ),
     );
   }

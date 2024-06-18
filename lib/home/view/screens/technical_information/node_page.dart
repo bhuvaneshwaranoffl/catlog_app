@@ -14,7 +14,7 @@ class NodePage extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => PdfViewerPage(pdfPath: pdfPath),
+        builder: (context) => PdfViewerPage(pdfPath: pdfPath, name: '',),
       ),
     );
   }
