@@ -59,7 +59,7 @@ class _TechnicalSupportWidgetState extends State<TechnicalSupportWidget> {
                 color: Colors.white,
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
+                     color: Colors.grey.shade500,
                     spreadRadius: 4,
                     blurRadius: 5,
                     offset: const Offset(0, 2),

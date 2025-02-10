@@ -93,7 +93,7 @@ class _TechnicalInformationState extends State<TechnicalInformation> {
             borderRadius: BorderRadius.circular(9.r),
             boxShadow: [
               BoxShadow(
-                color: Colors.grey.withOpacity(0.5),
+                 color: Colors.grey.shade500,
                 spreadRadius: 2.r,
                 blurRadius: 5.r,
                 offset: const Offset(0, 2),
