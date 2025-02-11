@@ -20,7 +20,7 @@ class CustomBottomNavBar extends StatelessWidget {
       animationCurve: Curves.easeIn,
       animationDuration: const Duration(milliseconds: 400),
      // backgroundColor: const Color.fromARGB(255, 137, 24, 16),
-     backgroundColor: Colors.white,
+     backgroundColor: Colors.transparent,
       items: [
         _buildNavItem(Icons.home, "Home"),
         _buildNavItem(Icons.contact_page, "Contact"),

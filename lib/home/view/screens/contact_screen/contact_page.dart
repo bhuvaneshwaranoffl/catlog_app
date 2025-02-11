@@ -30,14 +30,15 @@ class _ContactPageState extends State<ContactPage> {
         if (constraints.maxWidth > 600 &&
             MediaQuery.of(context).orientation == Orientation.landscape) {
           height = 100;
-          fontSize = 15.sp;
+          fontSize = 11.3.sp;
         } else {
-          height = 133;
+          height = 163;
           fontSize = 17.sp;
         }
         return Stack(
           children: [
             CustomPaint(
+               size: const Size.fromHeight(220.0),
               painter: CurvedTickAppBarPainter(),
               child: Container(
                 height:height, // Height of your AppBar
@@ -46,9 +47,9 @@ class _ContactPageState extends State<ContactPage> {
             Column(
               children: [
                 SizedBox(
-                  height: 120.h, // Height of your AppBar
+                 // height: 120.h, // Height of your AppBar
                   child: AppBar(
-                    title: Text("CONTACT",
+                    title: Text("CONTACT ",
                     style: TextStyle(fontSize:fontSize,
                     fontWeight: FontWeight.w600),),
                     centerTitle: true,

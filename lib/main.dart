@@ -27,7 +27,8 @@ class MyApp extends StatelessWidget {
           title: 'Catalog app',
           theme: ThemeData(
             appBarTheme: const AppBarTheme(
-                titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
+                titleTextStyle: TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.bold
+                ),
                 color:Constant.scaffoldBackground,
                 iconTheme: IconThemeData(color: Colors.white)),
            colorScheme:
