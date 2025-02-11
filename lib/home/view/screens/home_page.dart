@@ -31,18 +31,18 @@ class _HomePageState extends State<HomePage> {
           int flex;
           if (constraints.maxWidth > 600 &&
               MediaQuery.of(context).orientation == Orientation.landscape) {
-            height = 100;
+            height = 120;
             fontSize = 11.3.sp;
             flex = 3;
           } else {
-            height = 135;
+            height = 145;
             fontSize = 17.sp;
             flex = 6;
           }
           return Stack(
             children: [
               CustomPaint(
-                size: const Size.fromHeight(200.0),
+                size: const Size.fromHeight(220.0),
                 painter: CurvedTickAppBarPainter(),
                 child: Container(
                   height: height,
@@ -61,14 +61,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 actions: [
-                  Padding(
-                    padding:EdgeInsets.only(right: 20.w,bottom: 20.h),
-                    child: IconButton(
-                      onPressed: () {
-                        context.pushNamed("/aboutus");
-                      },
-                      icon: const Icon(Icons.report_gmailerrorred),
-                    ),
+                  IconButton(
+                    onPressed: () {
+                      context.pushNamed("/aboutus");
+                    },
+                    icon: const Icon(Icons.report_gmailerrorred),
                   )
                 ],
               ),
@@ -86,42 +83,41 @@ class _HomePageState extends State<HomePage> {
                         double imgHeight;
                         double imgwidth;
                         double font;
-                        double padding;
-                        if (constraints.maxWidth > 600 &&
-                            MediaQuery.of(context).orientation ==
-                                Orientation.landscape) {
+                      //  double padding;
+                        if (constraints.maxWidth < 600) {
+                          // Mobile layout
                           crossAxisCount = 2;
-                          mainAxisheight = 150;
+                          mainAxisheight = 148;
                           height = 130;
                           width = 300;
-                          imgwidth = 95.w;
-                          imgHeight = 95.h;
-                          font = 7.sp;
-                          padding = 40.h;
-                        }
-
-                        if (constraints.maxWidth > 1280 &&
+                          imgwidth = 35.w;
+                          imgHeight = 35.h;
+                          font = 12.sp;
+                        //  padding = 40.h;
+                        } else if (constraints.maxWidth > 1280 &&
                             MediaQuery.of(context).orientation ==
                                 Orientation.landscape) {
-                          crossAxisCount = 4;
+                          // Tablet/Large screen in Landscape
+                          crossAxisCount = 3;
                           mainAxisheight = 130;
                           height = 110;
-                          width = 270;
+                          width = 370;
                           imgwidth = 45.w;
                           imgHeight = 45.h;
                           font = 3.sp;
-                          padding = 10.h;
-                        } 
-                         else {
-                          crossAxisCount = 2;
+                        //  padding = 10.h;
+                        } else {
+                          // Default case (Medium screens, portrait tablets, etc.)
+                          crossAxisCount = 3;
                           mainAxisheight = 130;
                           height = 100;
                           width = 170;
-                          imgwidth = 35.w;
-                          imgHeight = 35.h;
-                          font = 11.sp;
-                          padding = 10.h;
+                          imgwidth = 75.w;
+                          imgHeight = 75.h;
+                          font = 4.sp;
+                         // padding = 10.h;
                         }
+
                         return GridView.builder(
                           itemCount: items.length,
                           scrollDirection: Axis.vertical,
@@ -174,7 +170,7 @@ class _HomePageState extends State<HomePage> {
                                       borderRadius: BorderRadius.circular(20.r),
                                       boxShadow: [
                                         BoxShadow(
-                                           color: Colors.grey.shade500,
+                                          color: Colors.grey.shade500,
                                           spreadRadius: 3,
                                           blurRadius: 4,
                                           offset: const Offset(0,
@@ -186,29 +182,28 @@ class _HomePageState extends State<HomePage> {
                                       //   fit: BoxFit.cover,
                                       // ),
                                     ),
-                                    child: Padding(
-                                      padding: EdgeInsets.only(top: padding),
-                                      child: Column(
-                                        children: [
-                                          SizedBox(
-                                            height: imgHeight,
-                                            width: imgwidth,
-                                            child:
-                                                Image.asset(items[index].image),
-                                          ),
-                                          SizedBox(
-                                            height: 2.h,
-                                          ),
-                                          Text(
-                                            items[index].name,
-                                            style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: font,
-                                                fontWeight: FontWeight.w800),
-                                            softWrap: true,
-                                          ),
-                                        ],
-                                      ),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        SizedBox(
+                                          height: imgHeight,
+                                          width: imgwidth,
+                                          child:
+                                              Image.asset(items[index].image),
+                                        ),
+                                        SizedBox(
+                                          height: 2.h,
+                                        ),
+                                        Text(
+                                          items[index].name,
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: font,
+                                              fontWeight: FontWeight.w800),
+                                          softWrap: true,
+                                        ),
+                                      ],
                                     ),
                                   ),
                                   SizedBox(height: 10.h),
