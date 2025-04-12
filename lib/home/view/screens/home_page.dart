@@ -19,6 +19,7 @@ class _HomePageState extends State<HomePage> {
     Item("assets/illustration/troubleshooting.png", "TECHNICAL INFORMATION"),
     Item("assets/illustration/3d-calculator.png", "ENGINEERING CALCULATOR"),
     Item("assets/illustration/online-survey.png", "WARRANTY ISSUES"),
+    
   ];
 
   @override

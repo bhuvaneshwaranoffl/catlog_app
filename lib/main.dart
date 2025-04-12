@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       child: MultiProvider(
         providers: [
          // ChangeNotifierProvider(create: (_)=>TechnicalInfoProvider()),
-          ChangeNotifierProvider(create: (_) => FaqProvider())
+            ChangeNotifierProvider(create: (_) => FaqProvider())
         ],
         child: MaterialApp.router(
           debugShowCheckedModeBanner: false,
