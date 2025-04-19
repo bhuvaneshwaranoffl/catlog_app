@@ -1,16 +1,14 @@
 // router_config.dart
 import 'package:catalogue/home/controller/bottom_nav_bar_controller.dart/home_bottom_bar.dart';
 import 'package:catalogue/home/controller/bottom_nav_bar_controller.dart/tech_info_main.dart';
+import 'package:catalogue/home/model/contact.dart';
 import 'package:catalogue/home/view/screens/about_us.dart';
 import 'package:catalogue/home/view/screens/calculator/min_slope/min_slope.dart';
 import 'package:catalogue/home/view/screens/calculator/thrust_forces/thrust_force.dart';
 import 'package:catalogue/home/view/screens/chemical_resistance/chemical_resitance.dart';
 import 'package:catalogue/home/view/screens/contact_screen/contact_page.dart';
 import 'package:catalogue/home/view/screens/calculator/calci_main_screen.dart';
-import 'package:catalogue/home/view/screens/contact_screen/customer_service.dart';
-import 'package:catalogue/home/view/screens/contact_screen/manufacturing_rep.dart';
-import 'package:catalogue/home/view/screens/contact_screen/regional_managers.dart';
-import 'package:catalogue/home/view/screens/contact_screen/technical_support.dart';
+import 'package:catalogue/home/view/screens/contact_screen/dynamic_contact_page.dart';
 import 'package:catalogue/home/view/screens/no_hub_fittings/no_hub_fittings.dart';
 import 'package:catalogue/home/view/screens/sv_hub_fittings/sv_hub_fittings.dart';
 import 'package:catalogue/home/view/screens/technical_information/faq_page.dart';
@@ -102,53 +100,24 @@ final GoRouter router = GoRouter(
       },
     ),
     GoRoute(
-      name: "/customer",
-      path: "/customer",
-      builder: (context, state) {
-        return const CustomerService();
-      },
-    ),
-    GoRoute(
-      name: "/rep",
-      path: "/rep",
-      builder: (context, state) {
-        return const ManufacturingRep();
-      },
-    ),
-    GoRoute(
-      name: "/region",
-      path: "/region",
-      builder: (context, state) {
-        return const RegionalManagers();
-      },
-    ),
-    GoRoute(
-      name: "/techsupport",
-      path: "/techsupport",
-      builder: (context, state) {
-        return const TechnicalSupport();
-      },
-    ),
-    // GoRoute(
-    //   name: "/secondscreen",
-    //   path: "/secondscreen",
-    //   builder: (context, state) {
-    //     return const SecondCommonScreen();
-    //   },
-    // ),
-    // GoRoute(
-    //   name: "/thirdscreen",
-    //   path: "/thirdscreen",
-    //   builder: (context, state) {
-    //     return const ThirdCommonScreen();
-    //   },
-    // ),
-    GoRoute(
       name: "/faq",
       path: "/faq",
       builder: (context, state) {
         return const FAQPage();
       },
     ),
+   GoRoute(
+      name: '/detailedPage',
+      path: '/detailedPage',
+      builder: (context, state) {
+        final category = state.extra as ContactCategory;
+        return DynamicContactPage(
+          category: category.title,
+          entries: category.entries,
+        );
+      },
+    ),
+
+
   ],
 );

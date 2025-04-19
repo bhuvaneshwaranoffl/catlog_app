@@ -15,3 +15,7 @@ class FaqProvider extends ChangeNotifier {
     notifyListeners();
   }
 }
+
+
+
+

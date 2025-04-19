@@ -1,3 +1,4 @@
+import 'package:catalogue/home/provider/contact_provider.dart';
 import 'package:catalogue/home/provider/faq_provider.dart';
 import 'package:catalogue/home/routes/router.dart';
 import 'package:catalogue/home/utils/constant.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       child: MultiProvider(
         providers: [
          // ChangeNotifierProvider(create: (_)=>TechnicalInfoProvider()),
-            ChangeNotifierProvider(create: (_) => FaqProvider())
+            ChangeNotifierProvider(create: (_) => FaqProvider()),
+            ChangeNotifierProvider(create: (_) => ContactProvider()..loadContacts())
         ],
         child: MaterialApp.router(
           debugShowCheckedModeBanner: false,

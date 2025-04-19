@@ -1,0 +1,2 @@
+C:/T-nxt/flutter/Apps/dynamic catlog/android/app/.cxx/Debug/r5s3g725/x86_64/CMakeFiles/edit_cache.dir
+C:/T-nxt/flutter/Apps/dynamic catlog/android/app/.cxx/Debug/r5s3g725/x86_64/CMakeFiles/rebuild_cache.dir

@@ -1,8 +1,9 @@
+import 'package:catalogue/home/model/home_page_model.dart';
 import 'package:catalogue/home/view/widget/custom_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import '../../model/home_page_model.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

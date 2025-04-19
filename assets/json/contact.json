@@ -1,0 +1,270 @@
+{
+  "contact": {
+    "Customer Service": [
+      {
+        "name": "Ishaan",
+        "mobile": "8889012345",
+        "email": "ishaan@example.com",
+        "division": "South",
+        "designation": "Customer Service Executive",
+        "state": "Tamil Nadu"
+      },
+      {
+        "name": "Ranveer",
+        "mobile": "8990123456",
+        "email": "ranveer@example.com",
+        "division": "South",
+        "designation": "Customer Service Executive",
+        "state": "Telangana"
+      },
+      {
+        "name": "Parth",
+        "mobile": "8111122233",
+        "email": "parth@example.com",
+        "division": "North East",
+        "designation": "Customer Service Executive",
+        "state": "Tripura"
+      },
+      {
+        "name": "Sonal",
+        "mobile": "8667788990",
+        "email": "sonal@example.com",
+        "division": "Central",
+        "designation": "Customer Service Executive",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "name": "Aarav",
+        "mobile": "8778899001",
+        "email": "aarav@example.com",
+        "division": "North",
+        "designation": "Customer Service Executive",
+        "state": "Maharashtra"
+      },
+      {
+        "name": "Riya",
+        "mobile": "8889900112",
+        "email": "riya@example.com",
+        "division": "West",
+        "designation": "Customer Service Executive",
+        "state": "Manipur"
+      },
+      {
+        "name": "Vikas",
+        "mobile": "8990011223",
+        "email": "vikas@example.com",
+        "division": "South",
+        "designation": "Customer Service Executive",
+        "state": "Meghalaya"
+      },
+      {
+        "name": "Jiya",
+        "mobile": "9001122334",
+        "email": "jiya@example.com",
+        "division": "East",
+        "designation": "Customer Service Executive",
+        "state": "Mizoram"
+      }
+    ],
+    "Regional Manager": [
+      {
+        "name": "Laksh",
+        "mobile": "9123456780",
+        "email": "laksh@example.com",
+        "division": "East",
+        "designation": "Customer Service Executive",
+        "state": "Jharkhand"
+      },
+      {
+        "name": "Dev",
+        "mobile": "9345678901",
+        "email": "dev@example.com",
+        "division": "South",
+        "designation": "Customer Service Executive",
+        "state": "Karnataka"
+      },
+      {
+        "name": "Rohan",
+        "mobile": "9456123789",
+        "email": "rohan@example.com",
+        "division": "South",
+        "designation": "Customer Service Executive",
+        "state": "Kerala"
+      },
+      {
+        "name": "Sonal",
+        "mobile": "8667788990",
+        "email": "sonal@example.com",
+        "division": "Central",
+        "designation": "Customer Service Executive",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "name": "Aarav",
+        "mobile": "8778899001",
+        "email": "aarav@example.com",
+        "division": "North",
+        "designation": "Customer Service Executive",
+        "state": "Maharashtra"
+      },
+      {
+        "name": "Riya",
+        "mobile": "8889900112",
+        "email": "riya@example.com",
+        "division": "West",
+        "designation": "Customer Service Executive",
+        "state": "Manipur"
+      },
+      {
+        "name": "Vikas",
+        "mobile": "8990011223",
+        "email": "vikas@example.com",
+        "division": "South",
+        "designation": "Customer Service Executive",
+        "state": "Meghalaya"
+      },
+      {
+        "name": "Jiya",
+        "mobile": "9001122334",
+        "email": "jiya@example.com",
+        "division": "East",
+        "designation": "Customer Service Executive",
+        "state": "Mizoram"
+      }
+    ],
+
+    "Manufacturing Contacts": [
+      {
+        "name": "Yug",
+        "mobile": "9001122334",
+        "email": "yug@example.com",
+        "division": "West",
+        "designation": "Customer Service Executive",
+        "state": "Maharashtra"
+      },
+      {
+        "name": "Hriday",
+        "mobile": "8889997777",
+        "email": "hriday@example.com",
+        "division": "North East",
+        "designation": "Customer Service Executive",
+        "state": "Manipur"
+      },
+      {
+        "name": "Kiaan",
+        "mobile": "8012345678",
+        "email": "kiaan@example.com",
+        "division": "North East",
+        "designation": "Customer Service Executive",
+        "state": "Meghalaya"
+      },
+      {
+        "name": "Sonal",
+        "mobile": "8667788990",
+        "email": "sonal@example.com",
+        "division": "Central",
+        "designation": "Customer Service Executive",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "name": "Aarav",
+        "mobile": "8778899001",
+        "email": "aarav@example.com",
+        "division": "North",
+        "designation": "Customer Service Executive",
+        "state": "Maharashtra"
+      },
+      {
+        "name": "Riya",
+        "mobile": "8889900112",
+        "email": "riya@example.com",
+        "division": "West",
+        "designation": "Customer Service Executive",
+        "state": "Manipur"
+      },
+      {
+        "name": "Vikas",
+        "mobile": "8990011223",
+        "email": "vikas@example.com",
+        "division": "South",
+        "designation": "Customer Service Executive",
+        "state": "Meghalaya"
+      },
+      {
+        "name": "Jiya",
+        "mobile": "9001122334",
+        "email": "jiya@example.com",
+        "division": "East",
+        "designation": "Customer Service Executive",
+        "state": "Mizoram"
+      }
+    ],
+
+    "Technical Support": [
+      {
+        "name": "Yug",
+        "mobile": "9001122334",
+        "email": "yug@example.com",
+        "division": "West",
+        "designation": "Customer Service Executive",
+        "state": "Maharashtra"
+      },
+      {
+        "name": "Hriday",
+        "mobile": "8889997777",
+        "email": "hriday@example.com",
+        "division": "North East",
+        "designation": "Customer Service Executive",
+        "state": "Manipur"
+      },
+      {
+        "name": "Kiaan",
+        "mobile": "8012345678",
+        "email": "kiaan@example.com",
+        "division": "North East",
+        "designation": "Customer Service Executive",
+        "state": "Meghalaya"
+      },
+      {
+        "name": "Sonal",
+        "mobile": "8667788990",
+        "email": "sonal@example.com",
+        "division": "Central",
+        "designation": "Customer Service Executive",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "name": "Aarav",
+        "mobile": "8778899001",
+        "email": "aarav@example.com",
+        "division": "North",
+        "designation": "Customer Service Executive",
+        "state": "Maharashtra"
+      },
+      {
+        "name": "Riya",
+        "mobile": "8889900112",
+        "email": "riya@example.com",
+        "division": "West",
+        "designation": "Customer Service Executive",
+        "state": "Manipur"
+      },
+      {
+        "name": "Vikas",
+        "mobile": "8990011223",
+        "email": "vikas@example.com",
+        "division": "South",
+        "designation": "Customer Service Executive",
+        "state": "Meghalaya"
+      },
+      {
+        "name": "Jiya",
+        "mobile": "9001122334",
+        "email": "jiya@example.com",
+        "division": "East",
+        "designation": "Customer Service Executive",
+        "state": "Mizoram"
+      }
+    ]
+  }
+}
