@@ -1,5 +1,6 @@
 import 'package:catalogue/home/provider/contact_provider.dart';
 import 'package:catalogue/home/provider/faq_provider.dart';
+import 'package:catalogue/home/provider/home_item_provider.dart';
 import 'package:catalogue/home/routes/router.dart';
 import 'package:catalogue/home/utils/constant.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
         providers: [
          // ChangeNotifierProvider(create: (_)=>TechnicalInfoProvider()),
             ChangeNotifierProvider(create: (_) => FaqProvider()),
-            ChangeNotifierProvider(create: (_) => ContactProvider()..loadContacts())
+            ChangeNotifierProvider(create: (_) => ContactProvider()..loadContacts()),
+             ChangeNotifierProvider(create: (_) => ItemProvider()..loadItems()),
         ],
         child: MaterialApp.router(
           debugShowCheckedModeBanner: false,

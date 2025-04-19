@@ -1,0 +1,32 @@
+[
+  {
+    "image": "assets/illustration/water-pipe.png",
+    "name": "NO-HUB FITTINGS",
+    "route": "/nohub"
+  },
+  {
+    "image": "assets/illustration/tubes.png",
+    "name": "SV-HUB & SPIGOT FITTINGS",
+    "route": "/svhub"
+  },
+  {
+    "image": "assets/illustration/chemical-reaction.png",
+    "name": "CHEMICAL RESISTANCE",
+    "route": "/chemical"
+  },
+  {
+    "image": "assets/illustration/troubleshooting.png",
+    "name": "TECHNICAL INFORMATION",
+    "route": "/technical"
+  },
+  {
+    "image": "assets/illustration/3d-calculator.png",
+    "name": "ENGINEERING CALCULATOR",
+    "route": "/calcimain"
+  },
+  {
+    "image": "assets/illustration/online-survey.png",
+    "name": "WARRANTY ISSUES",
+    "route": "/warrenty"
+  }
+]
