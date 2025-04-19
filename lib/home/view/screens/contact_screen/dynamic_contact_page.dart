@@ -160,7 +160,21 @@ List<ContactEntry> get filteredContacts {
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                CircleAvatar(radius: circleAvatar),
+                               CircleAvatar(
+                                  radius: circleAvatar,
+                                  backgroundColor: Colors.red
+                                      .shade100, // Optional: light red background
+                                  child: Text(
+                                    contact.name.isNotEmpty
+                                        ? contact.name[0].toUpperCase()
+                                        : '',
+                                    style: TextStyle(
+                                      color: Colors.red, // Text color
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: fontSize,
+                                    ),
+                                  ),
+                                ),
                                 SizedBox(width: sizedBox),
                                 Expanded(
                                   child: Column(
